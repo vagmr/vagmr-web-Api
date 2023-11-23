@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>视图技术</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/index.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1>欢迎来到vagmr接口的起始页,<span th:text="${message}"></span></h1>
+        <ul>
+            <li><a href="/json">/获取json数据</a></li>
+            <li><a href="/user">/获取user的json数据</a></li>
+            <li><a href="/login">/login</a></li>
+        </ul>
+    </main>
+    <footer>
+        <div th:text="${time}"></div>
+        <span>Copyright@2023 Vagmr</span>
+        <span>Powered by Thymeleaf and springboot</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        main {
+            margin: 0px auto;
+            width: 500px;
+            height: 200px;
+            border: 2px solid #c0c1c6;
+        }
+
+        h3 {
+            margin-left: 33.5%;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .iconList {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 5px;
+            background-color: #c0c1c6;
+        }
+
+        .iconList .column {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1;
+        }
+
+        .iconList .column li {
+            width: 80%;
+            height: 80%;
+            background: url(../img/c-original.svg) no-repeat;
+
+        }
+
+        .iconList .column #v2 {
+            background: url(../img/cplusplus-original.svg) no-repeat
+        }
+
+        .iconList .column #v3 {
+            background: url(../img/cmake-original.svg) no-repeat
+        }
+
+        .iconList .column #v4 {
+            background: url(../img/java-original.svg) no-repeat
+        }
+
+        .iconList .column #v5 {
+            background: url(../img/python-original.svg) no-repeat
+        }
+
+        .iconList .column #v6 {
+            background: url(../img/javascript-original.svg) no-repeat
+        }
+
+        .iconList .column #v7 {
+            background: url(../img/html5-original.svg) no-repeat
+        }
+
+        .iconList .column #v8 {
+            background: url(../img/css3-original.svg) no-repeat
+        }
+
+        .iconList .column #v9 {
+            background: url(../img/typescript-original.svg) no-repeat
+        }
+
+        .iconList .column #v10 {
+            background: url(../img/react-original.svg) no-repeat
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Top use code</h3>
+    <main>
+        <ul class="iconList">
+            <ul class="column">
+                <li id="v1"></li>
+                <li id="v2"></li>
+                <li id="v3"></li>
+                <li id="v4"></li>
+                <li id="v5"></li>
+            </ul>
+            <ul class="column">
+                <li id="v6"></li>
+                <li id="v7"></li>
+                <li id="v8"></li>
+                <li id="v9"></li>
+                <li id="v10"></li>
+            </ul>
+        </ul>
+    </main>
+</body>
+
+</html>

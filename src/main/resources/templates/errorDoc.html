@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>错误文档页</title>
+    <style>
+        /* 定义卡片样式 */
+        .error-card {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        /* 不同类型的错误分配不同的颜色 */
+        .error-card.invalid {
+            background-color: red;
+        }
+
+        .error-card.missing {
+            background-color: rgb(216, 161, 21);
+        }
+
+        .error-card.unknown {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-card invalid">
+        <h2>参数无效错误</h2>
+        <p>请求方式：POST</p>
+        <p>错误信息：请求参数无效或格式错误。</p>
+        <p>处理办法：请检查请求参数的格式是否正确，确保传递的参数满足接口的要求。</p>
+    </div>
+
+    <div class="error-card missing">
+        <h2>参数缺失错误</h2>
+        <p>请求方式：GET</p>
+        <p>错误信息：请求缺少必需的参数或头部信息。</p>
+        <p>处理办法：请确认请求中包含了所有必需的参数和头部信息，确保完整发送请求。</p>
+    </div>
+
+    <div class="error-card unknown">
+        <h2>未知错误</h2>
+        <p>请求方式：PUT</p>
+        <p>错误信息：服务器无法处理该请求，原因未知。</p>
+        <p>处理办法：请联系服务器管理员以获取更多帮助，或尝试稍后再次发送请求。</p>
+    </div>
+</body>
+
+</html>

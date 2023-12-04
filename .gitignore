@@ -14,7 +14,7 @@ target/
 .springBeans
 .sts4-cache
 /src/main/resources/conf
-**/src/test/
+/src/test/java/spt/vagmr/webdev/
 ### IntelliJ IDEA ###
 .idea
 *.iws

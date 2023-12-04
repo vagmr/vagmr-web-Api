@@ -2,6 +2,7 @@ package spt.vagmr.webdev.config;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Component;
 import spt.vagmr.webdev.vo.BookRecord;
 
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
 @Setter
 //通过getter和setter方法给books赋值和取值
 //@ConfigurationProperties(prefix = "mock")
+@Component
 public class BookContainer {
     private List<BookRecord> books;
 }

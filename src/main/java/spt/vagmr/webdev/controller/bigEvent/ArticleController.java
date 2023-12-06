@@ -12,8 +12,8 @@ import spt.vagmr.webdev.vo.bigEvent.PageBean;
 /**
  * @author vagmr
  * @version 0.0.1
- * 2023/11/13-16:33
- * springBootProject
+ *          2023/11/13-16:33
+ *          springBootProject
  * @Description
  */
 @RestController
@@ -21,38 +21,46 @@ import spt.vagmr.webdev.vo.bigEvent.PageBean;
 public class ArticleController {
     @Autowired
     private ArticleService articleService;
+
+    /**
+     * 处理 HTTP POST 请求以添加新文章。
+     *
+     * @param article 待添加的文章对象，根据其类中定义的
+     *                约束进行验证
+     * @return 返回一个包含成功消息的 Result 对象
+     */
     @PostMapping
-    public Result<String> addArticle(@Validated @RequestBody Article article){
+    public Result<String> addArticle(@Validated @RequestBody Article article) {
         articleService.add(article);
         return Result.success("添加文章成功");
     }
-    /*实现分页查询功能*/
+
+    /* 实现分页查询功能 */
     @GetMapping
-    public Result<PageBean<Article>> getArticleList
-    (Integer pageNum,Integer pageSize,
-     @RequestParam(required = false) Integer categoryId,
-     @RequestParam(required = false) String  state
-    )
-    {
-     PageBean<Article> pa = articleService.list(pageNum,pageSize,categoryId,state);
-     return Result.success(pa);
+    public Result<PageBean<Article>> getArticleList(Integer pageNum, Integer pageSize,
+            @RequestParam(required = false) Integer categoryId,
+            @RequestParam(required = false) String state) {
+        PageBean<Article> pa = articleService.list(pageNum, pageSize, categoryId, state);
+        return Result.success(pa);
     }
-    /*获取文章详情*/
+
+    /* 获取文章详情 */
     @GetMapping("/detail")
-    public Result<Article> getArticleDetail(@RequestParam Integer id){
+    public Result<Article> getArticleDetail(@RequestParam Integer id) {
         Article article = articleService.getDetail(id);
-        return  Result.success(article);
+        return Result.success(article);
     }
-    /*更新文章*/
+
+    /* 更新文章 */
     @PutMapping
-    public Result<String> updateArticle
-    (@Validated(Article.put.class) @RequestBody Article article){
-     articleService.update(article);
+    public Result<String> updateArticle(@Validated(Article.put.class) @RequestBody Article article) {
+        articleService.update(article);
         return Result.success("更新文章成功");
     }
-    /*删除文章*/
+
+    /* 删除文章 */
     @DeleteMapping
-    public Result<String> deleteArticle(@RequestParam Integer id){
+    public Result<String> deleteArticle(@RequestParam Integer id) {
         articleService.delete(id);
         return Result.success("删除文章成功");
     }

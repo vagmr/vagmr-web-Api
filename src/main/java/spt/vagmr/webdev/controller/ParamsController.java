@@ -5,7 +5,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import spt.vagmr.webdev.mapper.AccMapper;
+import spt.vagmr.webdev.mapper.main.AccMapper;
 import spt.vagmr.webdev.vo.Acc;
 
 import java.io.BufferedReader;

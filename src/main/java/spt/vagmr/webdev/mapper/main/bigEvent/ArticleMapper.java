@@ -1,4 +1,4 @@
-package spt.vagmr.webdev.mapper.bigEvent;
+package spt.vagmr.webdev.mapper.main.bigEvent;
 
 import org.apache.ibatis.annotations.*;
 import spt.vagmr.webdev.vo.bigEvent.Article;

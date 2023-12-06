@@ -1,4 +1,4 @@
-package spt.vagmr.webdev.mapper;
+package spt.vagmr.webdev.mapper.main;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;

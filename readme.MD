@@ -1,6 +1,8 @@
 # vagmr-web-Api
 使用springboot构建的简易Api接口
+
 注意: 我没有上传配置文件，只是上传了代码
+
 eg:仅用于学习交流。
 
 ## Features
@@ -17,6 +19,7 @@ Before you begin, ensure you have met the following requirements:
 - Java JDK 17 or above
 - Maven 3.8 or above
 - Spring Boot 3.0 or above (such as IntelliJ IDEA, Eclipse, VS Code)
+
 jdk17以下的版本，可能不支持
 
 ## Installation

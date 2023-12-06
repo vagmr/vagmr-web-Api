@@ -2,7 +2,7 @@ package spt.vagmr.webdev.service.bigEvent.impl;
 
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
-import spt.vagmr.webdev.mapper.bigEvent.bigEventMapper;
+import spt.vagmr.webdev.mapper.main.bigEvent.bigEventMapper;
 import spt.vagmr.webdev.service.bigEvent.userService;
 import spt.vagmr.webdev.util.Md5Util;
 import spt.vagmr.webdev.util.ThreadLocalUtil;

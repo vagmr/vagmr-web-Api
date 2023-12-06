@@ -6,7 +6,7 @@ import jakarta.annotation.Resource;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import spt.vagmr.webdev.Exception.NotFoundException;
-import spt.vagmr.webdev.mapper.bigEvent.ArticleMapper;
+import spt.vagmr.webdev.mapper.main.bigEvent.ArticleMapper;
 import spt.vagmr.webdev.service.bigEvent.ArticleService;
 import spt.vagmr.webdev.util.ThreadLocalUtil;
 import spt.vagmr.webdev.vo.bigEvent.Article;

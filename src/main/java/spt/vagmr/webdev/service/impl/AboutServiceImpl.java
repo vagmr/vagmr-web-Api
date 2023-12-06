@@ -1,7 +1,7 @@
 package spt.vagmr.webdev.service.impl;
 
 import org.springframework.stereotype.Service;
-import spt.vagmr.webdev.mapper.SkillMapper;
+import spt.vagmr.webdev.mapper.main.SkillMapper;
 import spt.vagmr.webdev.service.AboutService;
 import spt.vagmr.webdev.vo.SkillVo;
 

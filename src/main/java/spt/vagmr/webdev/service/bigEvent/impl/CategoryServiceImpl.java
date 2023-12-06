@@ -4,7 +4,7 @@ import jakarta.annotation.Resource;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import spt.vagmr.webdev.Exception.NotFoundException;
-import spt.vagmr.webdev.mapper.bigEvent.CategoryMapper;
+import spt.vagmr.webdev.mapper.main.bigEvent.CategoryMapper;
 import spt.vagmr.webdev.service.bigEvent.CategoryService;
 import spt.vagmr.webdev.util.ThreadLocalUtil;
 import spt.vagmr.webdev.vo.bigEvent.Category;

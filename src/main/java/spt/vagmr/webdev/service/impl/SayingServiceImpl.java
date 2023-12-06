@@ -1,7 +1,7 @@
 package spt.vagmr.webdev.service.impl;
 
 import org.springframework.stereotype.Service;
-import spt.vagmr.webdev.mapper.SayingMapper;
+import spt.vagmr.webdev.mapper.main.SayingMapper;
 import spt.vagmr.webdev.service.SayingService;
 import spt.vagmr.webdev.vo.EnglishData;
 

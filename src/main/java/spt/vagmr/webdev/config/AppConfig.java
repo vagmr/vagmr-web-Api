@@ -8,10 +8,11 @@ import org.springframework.web.filter.CommonsRequestLoggingFilter;
 /**
  * @author vagmr
  * @version 0.0.1
- *          2023/10/28-18:33
- *          springBootProject
+ * @updateTime   2023/10/28-18:33
+ * @projectName  springBootProject
  * @Description 用来记录日志的过滤器，debug模式下生效，配置里logging.level.web=debug
  */
+    // TODO: 2023/10/28 过滤器的使用
 
 @Configuration
 public class AppConfig {

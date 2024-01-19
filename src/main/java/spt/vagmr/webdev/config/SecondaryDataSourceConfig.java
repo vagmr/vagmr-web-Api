@@ -36,8 +36,8 @@ public class SecondaryDataSourceConfig {
     public SqlSessionFactory secondarySqlSessionFactory(@Qualifier("secondDataSource") DataSource secondDataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(secondDataSource);
-        // 设置 MyBatis 配置文件和 Mapper 文件的位置，根据实际情况调整路径
         bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/secondary/*.xml"));
+        // 开启驼峰映射
         Objects.requireNonNull(bean.getObject()).getConfiguration().setMapUnderscoreToCamelCase(true);
         return bean.getObject();
     }

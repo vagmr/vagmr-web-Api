@@ -3,6 +3,7 @@ package spt.vagmr.webdev;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
@@ -10,6 +11,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 @MapperScan(basePackages = "spt.vagmr.webdev.mapper")
 //开启自动属性导入
 //@EnableConfigurationProperties({BookContainer.class})
+@EnableConfigurationProperties({spt.vagmr.webdev.util.AliOssUtil.class})
 public class WebDevApplication {
     /**
      * Runs the main method of the Java application.

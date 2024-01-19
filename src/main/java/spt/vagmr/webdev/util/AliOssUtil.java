@@ -6,6 +6,7 @@ import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.OSSException;
 import com.aliyun.oss.model.PutObjectRequest;
 import com.aliyun.oss.model.PutObjectResult;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.io.InputStream;
 
@@ -16,6 +17,7 @@ import java.io.InputStream;
  * springBootProject
  * @Description 阿里云oss文件上传工具类
  */
+@ConfigurationProperties(prefix = "aliconfig")
 public class AliOssUtil {
     // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。
     public static final String ENDPOINT = "https://oss-cn-beijing.aliyuncs.com";
@@ -23,15 +25,26 @@ public class AliOssUtil {
 
     // 填写Bucket名称，例如examplebucket。
     public static final String BUCKET_NAME = "vagmr-event";
-    public static final String  OSS_ACCESS_KEY_ID = "LTAI5tDpTsBXpfRJDurnR7uA";
-    public static final String OSS_ACCESS_KEY_SECRET = "hGQ6frZtWaeOYLGg7x8fvaxvrsJYyR";
+
+    private static String aid;
+    private static String key;
+
+    public void setAid(String aid) {
+        AliOssUtil.aid = aid;
+    }
+
+    public void setKey(String key) {
+        AliOssUtil.key = key;
+    }
+//    public static final String  OSS_ACCESS_KEY_ID;
+//    public static final String OSS_ACCESS_KEY_SECRET =key;
 
 
     public static String uploadFile(String objectName, InputStream in) throws Exception {
 
 
         // 创建OSSClient实例。
-        OSS ossClient = new OSSClientBuilder().build(ENDPOINT,OSS_ACCESS_KEY_ID,OSS_ACCESS_KEY_SECRET);
+        OSS ossClient = new OSSClientBuilder().build(ENDPOINT,aid,key);
         // 初始化返回值
         String url = "";
         try {

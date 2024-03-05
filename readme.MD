@@ -1,7 +1,7 @@
 # vagmr-web-Api
 使用springboot构建的简易Api接口
 
-注意: 我没有上传配置文件，只是上传了代码
+ps:无配置文件
 
 eg:仅用于学习交流。
 
